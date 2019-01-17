@@ -66,7 +66,7 @@ namespace SEWKTand.Features.Admin
             if (ModelState.IsValid) //The RegisterAdminDTO Errormessage fires before
             {
                 var mappedUser = _mapper.Map<EntityAdmin>(model);
-                mappedUser.Email = ($"{model.FirstName.Substring(0, 1)}{model.LastName}@guldtand.com").ToLower();
+                mappedUser.Email = ($"{model.FirstName.Substring(0, 1)}{model.LastName}@qcdent.com").ToLower();
 
                 try
                 {
